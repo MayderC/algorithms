@@ -1,4 +1,4 @@
-function mergeSort(arr, start, end) {
+export function mergeSort(arr, start, end) {
   if (start >= end) return;
   const mid = Math.floor((start + end) / 2);
   mergeSort(arr, start, mid);
@@ -6,7 +6,7 @@ function mergeSort(arr, start, end) {
   return merge(arr, start, mid, end);
 }
 
-function merge(arr, start, mid, end) {
+export function merge(arr, start, mid, end) {
   const temp = [];
   let i = start;
   let j = mid + 1;
